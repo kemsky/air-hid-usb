@@ -26,20 +26,20 @@ You might experience problems debugging your application using FB on Mac OSX - h
 <b>Example</b>
 
     ```ActionScript
-         var manager:IHIDManager = HIDFactory.getHIDManager();
+       var manager:IHIDManager = HIDFactory.getHIDManager();
 
-         var deviceInfos:Array = manager.getDeviceList(0x8001, 0xA00F);//0x8001, 0xA00F
-         var wmouse:HidDeviceInfo;
-         for each (var hidDeviceInfo:HidDeviceInfo in deviceInfos)
-         {
+       var deviceInfos:Array = manager.getDeviceList(0x8001, 0xA00F);//0x8001, 0xA00F
+       var wmouse:HidDeviceInfo;
+       for each (var hidDeviceInfo:HidDeviceInfo in deviceInfos)
+       {
              if (hidDeviceInfo.interface_number == 1)
              {
                  wmouse = hidDeviceInfo;
                  break;
              }
-         }
-         if (wmouse)
-         {
+       }
+       if (wmouse)
+       {
              log.info("getDeviceByPath {0}", wmouse);
              var device:IHIDDevice = manager.getDeviceByPath(wmouse.path);
              if (device.open())
@@ -50,13 +50,13 @@ You might experience problems debugging your application using FB on Mac OSX - h
                  device.close();
              }
              device.dispose();
-         }
+       }
     ```
 
 <b>Demo Windows 8</b>
 
-<img source="http://air-hid-usb.googlecode.com/files/windows.png"/>
+<img src="http://air-hid-usb.googlecode.com/files/windows.png"/>
 
 <b>Demo Mac OS 10.6.7</b>
 
-<img source="http://air-hid-usb.googlecode.com/files/macos.png"/>
+<img src="http://air-hid-usb.googlecode.com/files/macos.png"/>
