@@ -15,10 +15,6 @@ AIR native extension, wrapper for HIDAPI
 
 5. [Documentation](http://bananas.at.tut.by/hidapi/index.html)
 
-6. https://bugs.adobe.com/jira/browse/FP-247
-
-7. [Version history](http://code.google.com/p/air-hid-usb/source/browse/trunk/history.txt)
-
 <b>Known Issues</b>
 
 You might experience problems debugging your application using FB on Mac OSX - http://forums.adobe.com/message/4869042, Issue 7 .
