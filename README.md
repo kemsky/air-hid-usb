@@ -25,8 +25,6 @@ You might experience problems debugging your application using FB on Mac OSX - h
 
 <b>Example</b>
 
-    ```ActionScript
-    
        var manager:IHIDManager = HIDFactory.getHIDManager();
 
        var deviceInfos:Array = manager.getDeviceList(0x8001, 0xA00F);//0x8001, 0xA00F
@@ -52,8 +50,6 @@ You might experience problems debugging your application using FB on Mac OSX - h
              }
              device.dispose();
        }
-       
-    ```
 
 <b>Demo Windows 8</b>
 
