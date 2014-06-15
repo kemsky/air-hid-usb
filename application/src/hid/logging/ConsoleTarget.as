@@ -1,5 +1,5 @@
 /*
- * Copyright: (c) 2012. Turtsevich Alexander
+ * Copyright: (c) 2014. Turtsevich Alexander
  *
  * Licensed under the MIT license: http://www.opensource.org/licenses/mit-license.html
  */

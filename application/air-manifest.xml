@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  ~ Copyright: (c) 2012. Turtsevich Alexander
+  ~ Copyright: (c) 2014. Turtsevich Alexander
   ~
   ~ Licensed under the MIT license: http://www.opensource.org/licenses/mit-license.html
   -->
-<application xmlns="http://ns.adobe.com/air/application/3.1">
+<application xmlns="http://ns.adobe.com/air/application/14.0">
 	<!-- Adobe AIR Application Descriptor File Template.
         Specifies parameters for identifying, installing, and launching AIR applications.
         See http://www.adobe.com/go/air_1.0_application_descriptor for complete documentation.
