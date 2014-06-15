@@ -3,7 +3,7 @@ air-hid-usb
 
 AIR native extension, wrapper for HIDAPI
 
-General Information
+<b>General Information</b>
 
 1. Requirements (build): Java runtime, Gradle, MinGW (Windows), MinGW-Utils  (Windows, mingw-util-0.3 since 0.4 is broken), GNU utilities for Win32 (Windows), XCode (Mac OS X)
 
@@ -11,19 +11,19 @@ General Information
 
 3. See application\extensions\unpacked\readme.txt for debug info.
 
-4. HIDAPI info http://www.signal11.us/oss/hidapi/
+4. HIDAPI http://www.signal11.us/oss/hidapi/
 
-5. [http://bananas.at.tut.by/hidapi/index.html Documentation]
+5. [Documentation](http://bananas.at.tut.by/hidapi/index.html)
 
-6. [https://bugs.adobe.com/jira/browse/FP-247 https://bugs.adobe.com/jira/browse/FP-247]
+6. https://bugs.adobe.com/jira/browse/FP-247
 
-7. [http://code.google.com/p/air-hid-usb/source/browse/trunk/history.txt Version history]
+7. [Version history](http://code.google.com/p/air-hid-usb/source/browse/trunk/history.txt)
 
-Known Issues
+<b>Known Issues</b>
 
 You might experience problems debugging your application using FB on Mac OSX - http://forums.adobe.com/message/4869042, Issue 7 .
 
-Example
+<b>Example</b>
 
     ```ActionScript
               var manager:IHIDManager = HIDFactory.getHIDManager();
@@ -53,10 +53,10 @@ Example
               }
     ```
 
-Demo Windows 8
+<b>Demo Windows 8</b>
 
 [http://air-hid-usb.googlecode.com/files/windows.png]
 
-Demo Mac OS 10.6.7
+<b>Demo Mac OS 10.6.7</b>
 
 [http://air-hid-usb.googlecode.com/files/macos.png]
