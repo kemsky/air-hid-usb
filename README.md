@@ -55,8 +55,8 @@ You might experience problems debugging your application using FB on Mac OSX - h
 
 <b>Demo Windows 8</b>
 
-[http://air-hid-usb.googlecode.com/files/windows.png]
+<img source="http://air-hid-usb.googlecode.com/files/windows.png"/>
 
 <b>Demo Mac OS 10.6.7</b>
 
-[http://air-hid-usb.googlecode.com/files/macos.png]
+<img source="http://air-hid-usb.googlecode.com/files/macos.png"/>
