@@ -26,31 +26,31 @@ You might experience problems debugging your application using FB on Mac OSX - h
 <b>Example</b>
 
     ```ActionScript
-              var manager:IHIDManager = HIDFactory.getHIDManager();
+         var manager:IHIDManager = HIDFactory.getHIDManager();
 
-              var deviceInfos:Array = manager.getDeviceList(0x8001, 0xA00F);//0x8001, 0xA00F
-              var wmouse:HidDeviceInfo;
-              for each (var hidDeviceInfo:HidDeviceInfo in deviceInfos)
-              {
-                  if (hidDeviceInfo.interface_number == 1)
-                  {
-                      wmouse = hidDeviceInfo;
-                      break;
-                  }
-              }
-              if (wmouse)
-              {
-                  log.info("getDeviceByPath {0}", wmouse);
-                  var device:IHIDDevice = manager.getDeviceByPath(wmouse.path);
-                  if (device.open())
-                  {
-                      log.info("getManufacturerString: {0}", device.getManufacturerString());
-                      log.info("getProductString: {0}", device.getProductString());
-                      log.info("getSerialNumberString: {0}", device.getSerialNumberString());
-                      device.close();
-                  }
-                  device.dispose();
-              }
+         var deviceInfos:Array = manager.getDeviceList(0x8001, 0xA00F);//0x8001, 0xA00F
+         var wmouse:HidDeviceInfo;
+         for each (var hidDeviceInfo:HidDeviceInfo in deviceInfos)
+         {
+             if (hidDeviceInfo.interface_number == 1)
+             {
+                 wmouse = hidDeviceInfo;
+                 break;
+             }
+         }
+         if (wmouse)
+         {
+             log.info("getDeviceByPath {0}", wmouse);
+             var device:IHIDDevice = manager.getDeviceByPath(wmouse.path);
+             if (device.open())
+             {
+                 log.info("getManufacturerString: {0}", device.getManufacturerString());
+                 log.info("getProductString: {0}", device.getProductString());
+                 log.info("getSerialNumberString: {0}", device.getSerialNumberString());
+                 device.close();
+             }
+             device.dispose();
+         }
     ```
 
 <b>Demo Windows 8</b>
