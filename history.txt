@@ -1,0 +1,4 @@
+26.12.11 1.0.0 initial
+12.02.12 1.0.1 improved error handling
+18.02.12 1.0.2 minor improvements and HIDAPI changes
+02.03.12 1.0.3 improved api and HIDAPI changes: Mac: Fix return value for string functions

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  - Copyright: (c) 2012. Turtsevich Alexander
+  -
+  - Licensed under the MIT license: http://www.opensource.org/licenses/mit-license.html
+  -->
+<mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml"
+                        layout="vertical"
+                        title="DemoHID"
+                        showStatusBar="false"
+                        showTitleBar="true"
+                        applicationComplete="initializeApplication()"
+                        close="closeApplication()"
+                        width="500"
+                        height="500"
+                        minHeight="250"
+                        minWidth="250"
+                        verticalScrollPolicy="off"
+                        horizontalScrollPolicy="off"
+                        paddingBottom="5"
+                        paddingLeft="5"
+                        paddingRight="5"
+                        paddingTop="5"
+                        frameRate="60">
+    <mx:Script>
+		<![CDATA[
+        import com.hidapi.HIDFactory;
+        import com.hidapi.IHIDManager;
+
+        import hid.logging.ConsoleTarget;
+        import hid.logging.TextTarget;
+
+        import mx.collections.ArrayCollection;
+
+        import mx.logging.ILogger;
+        import mx.logging.Log;
+
+        import renderer.HEXFunction;
+
+        private static const log:ILogger = Log.getLogger("Main");
+
+        private var timer:uint;
+
+        private function initializeApplication():void
+        {
+            var visibleBounds:Rectangle = Screen.mainScreen.visibleBounds;
+            this.move(visibleBounds.width / 2 - this.width / 2, visibleBounds.height / 2 - this.height / 2);
+
+            var descriptor:XML = NativeApplication.nativeApplication.applicationDescriptor;
+            var ns:Namespace = descriptor.namespaceDeclarations()[0];
+            var version:String = descriptor.ns::versionNumber;
+
+            this.title += " " + version;
+
+            Log.addTarget(new ConsoleTarget());
+            Log.addTarget(new TextTarget(output));
+
+            updateStatus();
+            startDeviceDetection();
+        }
+
+        private function closeApplication():void
+        {
+            startDeviceDetection();
+        }
+
+        private function stopDeviceDetection():void
+        {
+            if (timer != 0)
+            {
+                clearInterval(timer);
+                timer = 0;
+            }
+        }
+
+        private function startDeviceDetection():void
+        {
+            updateStatus();
+
+            timer = setInterval(updateStatus, 5000);
+        }
+
+        private function updateStatus():void
+        {
+            var manager:IHIDManager = HIDFactory.getHIDManager();
+            var deviceList:Array = manager.getDeviceList();
+            deviceGrid.dataProvider = new ArrayCollection(deviceList);
+        }
+
+        ]]>
+	</mx:Script>
+
+    <mx:TabNavigator height="100%" width="100%" minWidth="0" creationPolicy="all" paddingBottom="5" paddingLeft="5" paddingRight="5" paddingTop="5">
+        <mx:VBox width="100%" height="100%" label="Configure"  horizontalAlign="center">
+            <mx:DataGrid id="deviceGrid" width="100%" height="100%">
+                <mx:columns>
+                    <mx:DataGridColumn headerText="Product ID" labelFunction="new HEXFunction('productId').labelFunction"/>
+                    <mx:DataGridColumn headerText="Vendor ID" labelFunction="new HEXFunction('vendorId').labelFunction"/>
+                    <mx:DataGridColumn headerText="Serial" dataField="serial_number"/>
+                    <mx:DataGridColumn headerText="Manufacturer" dataField="manufacturer_string"/>
+                    <mx:DataGridColumn headerText="Product" dataField="product_string"/>
+                    <mx:DataGridColumn headerText="Usage" labelFunction="new HEXFunction('usage').labelFunction"/>
+                    <mx:DataGridColumn headerText="Usage page" labelFunction="new HEXFunction('usage_page').labelFunction"/>
+                    <mx:DataGridColumn headerText="Interface number" dataField="interface_number"/>
+                    <mx:DataGridColumn headerText="Path" dataField="path"/>
+                </mx:columns>
+            </mx:DataGrid>
+        </mx:VBox>
+        <mx:VBox width="100%" height="100%" label="Logs">
+            <mx:TextArea id="output" wordWrap="false" width="100%" height="100%" fontFamily="Courier new"  editable="false"/>
+        </mx:VBox>
+    </mx:TabNavigator>
+</mx:WindowedApplication>

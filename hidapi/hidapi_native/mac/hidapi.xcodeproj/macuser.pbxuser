@@ -1,0 +1,179 @@
+// !$*UTF8*$!
+{
+	0867D690FE84028FC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeTarget = 8DC2EF4F0486A6940098B216 /* hidapi.framework */;
+		addToTargets = (
+			8DC2EF4F0486A6940098B216 /* hidapi.framework */,
+		);
+		codeSenseManager = 631EEAD5149CE83B00F15B3A /* Code sense */;
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					460,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					572,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = 1;
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_FiletypeID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					532,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 346622385;
+			PBXWorkspaceStateSaveDate = 346622385;
+		};
+		perUserProjectItems = {
+			6351F74D149FE26F00D743AB /* PBXTextBookmark */ = 6351F74D149FE26F00D743AB /* PBXTextBookmark */;
+			636CB7E9149FC8B500DB21FB /* PBXTextBookmark */ = 636CB7E9149FC8B500DB21FB /* PBXTextBookmark */;
+			6398A4C214A909E400812F6A /* PBXTextBookmark */ = 6398A4C214A909E400812F6A /* PBXTextBookmark */;
+			63A48BC1149D48940056B5F5 /* PBXTextBookmark */ = 63A48BC1149D48940056B5F5 /* PBXTextBookmark */;
+			63B1FE6B149FEECF00CFA1D0 /* PBXTextBookmark */ = 63B1FE6B149FEECF00CFA1D0 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 631EEAD4149CE83B00F15B3A /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	32DBCF5E0370ADEE00C91783 /* hidapi_Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {750, 298}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 144}";
+		};
+	};
+	631A6380149D2D7F0024A93C /* hidapi.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {750, 5057}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 826}";
+		};
+	};
+	631EEAD4149CE83B00F15B3A /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	631EEAD5149CE83B00F15B3A /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	631EEADC149CE8B800F15B3A /* hid.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {963, 14339}}";
+			sepNavSelRange = "{19478, 0}";
+			sepNavVisRange = "{19169, 953}";
+			sepNavWindowFrame = "{{38, 474}, {750, 558}}";
+		};
+	};
+	6351F74D149FE26F00D743AB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 63852F9D149D3D0300E0B9FA /* air.cpp */;
+		name = "air.cpp: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 410;
+		vrLoc = 0;
+	};
+	636CB7E9149FC8B500DB21FB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 631A6380149D2D7F0024A93C /* hidapi.h */;
+		name = "hidapi.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 826;
+		vrLoc = 0;
+	};
+	63852F9D149D3D0300E0B9FA /* air.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {963, 13910}}";
+			sepNavSelRange = "{824, 0}";
+			sepNavVisRange = "{488, 503}";
+		};
+	};
+	6398A4C214A909E400812F6A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 32DBCF5E0370ADEE00C91783 /* hidapi_Prefix.pch */;
+		name = "hidapi_Prefix.pch: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 144;
+		vrLoc = 0;
+	};
+	63A48BC1149D48940056B5F5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 631EEADC149CE8B800F15B3A /* hid.c */;
+		name = "hid.c: 15";
+		rLen = 0;
+		rLoc = 422;
+		rType = 0;
+		vrLen = 1424;
+		vrLoc = 0;
+	};
+	63B1FE6B149FEECF00CFA1D0 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 32DBCF5E0370ADEE00C91783 /* hidapi_Prefix.pch */;
+		name = "hidapi_Prefix.pch: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 144;
+		vrLoc = 0;
+	};
+	8DC2EF4F0486A6940098B216 /* hidapi.framework */ = {
+		activeExec = 0;
+	};
+}

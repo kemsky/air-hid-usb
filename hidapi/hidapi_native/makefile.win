@@ -1,0 +1,22 @@
+# ~ Copyright: (c) 2014. Turtsevich Alexander
+# ~
+# ~ Licensed under the MIT license: http://www.opensource.org/licenses/mit-license.html
+
+all: hidapi.dll
+
+target=hidapi.dll
+commonFiles=./hidapi
+windows=./windows
+src=$(windows)/hid.cpp $(commonFiles)/air.cpp
+lib=-lhid -lsetupapi -lFlashRuntimeExtensions -L$(windows) -I$(commonFiles)
+inc=-I$(windows) -I$(AIR_SDK_HOME)/include
+flags=-Wall -shared -static-libgcc -static-libstdc++
+
+hidapi.dll: $(src) $(commonFiles)/air.h $(commonFiles)/hidapi.h air
+	g++ $(flags) $(src) $(lib) $(inc) -o ./bin/$(target)
+
+air:
+	convert.bat
+
+clean:
+	convert.bat clean

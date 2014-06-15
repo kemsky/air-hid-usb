@@ -1,0 +1,12 @@
+# ~ Copyright: (c) 2014. Turtsevich Alexander
+# ~
+# ~ Licensed under the MIT license: http://www.opensource.org/licenses/mit-license.html
+
+all: hidapi.framework
+
+hidapi.framework: ./mac/hid.c ./hidapi/air.cpp ./hidapi/air.h ./hidapi/hidapi.h
+	xcodebuild -project ./mac/hidapi.xcodeproj -target hidapi.framework -configuration Debug BUILD_DIR=$(CURDIR)/bin AIR_SDK_HOME=$(AIR_SDK_HOME)
+
+clean:
+	xcodebuild -project ./mac/hidapi.xcodeproj BUILD_DIR=$(CURDIR)/bin AIR_SDK_HOME=$(AIR_SDK_HOME) clean
+	#rm -rf ./mac/build

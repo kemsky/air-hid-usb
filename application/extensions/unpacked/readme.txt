@@ -1,0 +1,1 @@
+This is extensions dir, use debugger option: -extdir C:\Dev\usb-project\trunk\application\extensions\unpacked
