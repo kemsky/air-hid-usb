@@ -13,8 +13,6 @@ AIR native extension, wrapper for HIDAPI
 
 4. HIDAPI http://www.signal11.us/oss/hidapi/
 
-5. [Documentation](http://bananas.at.tut.by/hidapi/index.html)
-
 <b>Known Issues</b>
 
 You might experience problems debugging your application using FB on Mac OSX - http://forums.adobe.com/message/4869042, Issue 7 .
